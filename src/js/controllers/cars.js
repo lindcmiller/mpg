@@ -19,12 +19,15 @@ router.route('', 'cars', function () {
       .map(function (record) {
         var cells = record.split(',');
         
-        return { //change these:
-          // id: cells[0],
-          // erected: cells[3],
-          // lanes: cells[6],
-          // material: cells[9],
-          // type: cells[12]
+        return { 
+          id: cells[2],
+          fuel-type: cells[3],
+          aspiration: cells[4],
+          body-style: cells[6],
+          num-of-cylinders: cells[15], 
+          horsepower: cells[21],
+          city-mpg: cells[23],
+          highway-mpg: cells[24]
         };
       });
   }
