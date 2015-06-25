@@ -21,13 +21,13 @@ router.route('cars/:id', function (carId) {
         
         return { 
           id: cells[2],
-          fuel-type: cells[3],
+          fuelType: cells[3],
           aspiration: cells[4],
-          body-style: cells[6],
-          num-of-cylinders: cells[15], 
+          bodyStyle: cells[6],
+          numOfCylinders: cells[15], 
           horsepower: cells[21],
-          city-mpg: cells[23],
-          highway-mpg: cells[24]
+          cityMpg: cells[23],
+          highwayMpg: cells[24]
         };
       });
   }

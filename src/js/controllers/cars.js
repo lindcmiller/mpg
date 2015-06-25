@@ -7,13 +7,13 @@ var router = require('../router');
 
 router.route('', 'cars', function () {
   $.ajax({
-    url: 'data/cars.data',
+    url: 'data/mpg.data',
     method: 'GET'
   })
   .then(parseCarsCsv)
   .then(renderCars);
 
-  function parseCarsCsv(CarsCsv) {
+  function parseCarsCsv(carsCsv) {
     return carsCsv
       .split('\n')
       .map(function (record) {
@@ -21,18 +21,18 @@ router.route('', 'cars', function () {
         
         return { 
           id: cells[2],
-          fuel-type: cells[3],
+          fuelType: cells[3],
           aspiration: cells[4],
-          body-style: cells[6],
-          num-of-cylinders: cells[15], 
+          bodyStyle: cells[6],
+          numOfCylinders: cells[15], 
           horsepower: cells[21],
-          city-mpg: cells[23],
-          highway-mpg: cells[24]
+          cityMpg: cells[23],
+          highwayMpg: cells[24]
         };
       });
   }
   
-  function renderCars(CarsArray) {
+  function renderCars(carsArray) {
     var carsTemplate = views['cars-template'];
     var templateFn = _.template(carsTemplate, { variable: 'm' });
     var carsHTML = templateFn({ cars: carsArray });

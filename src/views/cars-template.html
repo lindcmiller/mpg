@@ -4,13 +4,14 @@
   <% m.cars.forEach(function (car) { %>
     <li class="car">
       <a href="#cars/<%- car.id %>">
-        <%- car.fuel-type %>
+        <%- car.id %>
+        <%- car.fuelType %>
         <%- car.aspiration %>
-        <%- car.body-style %>
-        <%- car.num-of-cylinders %>
+        <%- car.bodyStyle %>
+        <%- car.numOfCylinders %>
         <%- car.horsepower %>
-        <%- car.city-mpg %>
-        <%- car.highway-mpg %>
+        <%- car.cityMpg %>
+        <%- car.highwayMpg %>
       </a>
     </li>
   <% }) %>
