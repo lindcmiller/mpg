@@ -1,9 +1,9 @@
 {
-  "name": "gulp-base",
+  "name": "mpg",
   "version": "0.0.0",
-  "homepage": "http://urltoyourgithubrepo.com",
+  "homepage": "https://github.com/lindcmiller/mpg",
   "authors": [
-    "Your Name <your@emailaddress.com>"
+    "Lindsey Miller <lindc.miller@gmail.com>"
   ],
   "moduleType": [
     "node"

@@ -1,0 +1,14 @@
+<h1>Cars</h1>
+
+<ul class="car-list">
+  <% m.cars.forEach(function (car) { %>
+    <li class="car">
+      <a href="#cars/<%- car.id %>">
+	  <!--change these: 
+        <%- bridge.erected %>
+        <%- bridge.material %>
+        <%- bridge.type %>-->
+      </a>
+    </li>
+  <% }) %>
+</ul>
