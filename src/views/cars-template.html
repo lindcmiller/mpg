@@ -2,17 +2,22 @@
 
 <ul class="car-list">
   <% m.cars.forEach(function (car) { %>
-    <li class="car">
+    <li class="car">Make:
       <a href="#cars/<%- car.id %>">
-        <%- car.id %>
-        <%- car.fuelType %>
-        <%- car.aspiration %>
-        <%- car.bodyStyle %>
-        <%- car.numOfCylinders %>
-        <%- car.horsepower %>
-        <%- car.cityMpg %>
-        <%- car.highwayMpg %>
-      </a>
-    </li>
+        <%- car.id %>,</a></li>
+    <li class="fuel">
+        Fuel Type: <%- car.fuelType %>,</li>
+    <li class="aspiration">    
+        Aspiration: <%- car.aspiration %>, </li>
+    <li class="body-style">      
+        Body Style: <%- car.bodyStyle %>, </li>
+    <li class="cylinders">      
+        Cylinders: <%- car.numOfCylinders %>, </li>
+    <li class="horsepower">
+        Horsepower: <%- car.horsepower %>, </li>
+    <li class="city-mpg">      
+        City MPG: <%- car.cityMpg %>, </li>
+    <li class="highway-mpg">
+        Highway MPG: <%- car.highwayMpg %>, </li>
   <% }) %>
 </ul>
